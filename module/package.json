@@ -1,0 +1,53 @@
+{
+  "name": "threejs-blendertools",
+  "description": "A Javasript library to hook Blender into Threejs",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bandinopla/threejs-blendertools.git"
+  },
+  "homepage": "https://github.com/bandinopla/threejs-blendertools",
+  "author": {
+    "name": "Bandinopla",
+    "url": "https://bandinopla.github.io/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bandinopla/threejs-blendertools/issues"
+  },
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "package.json",
+    "README.md",
+	"screenshot.png",
+	"plugin.png"
+  ],
+  "main": "./dist/threejs-blendertools.js",
+  "module": "./dist/threejs-blendertools.js",
+  "types": "./dist/threejs-blendertools.d.ts",
+  "exports": {
+    ".": "./dist/threejs-blendertools.js"
+  },
+  "devDependencies": {
+    "@types/three": "^0.182.0",
+    "three": "^0.182.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3",
+    "vite": "7.1.12",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-package-version": "^1.1.0"
+  },
+  "peerDependencies": {
+    "three": "^0.160.0"
+  },
+  "keywords": [
+    "blender",
+    "threejs"
+  ]
+}
