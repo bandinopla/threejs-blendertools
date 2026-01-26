@@ -91,7 +91,22 @@ import { ShotsManager } from 'threejs-blendertools';
 const cameras = [camera1, camera2, camera3];
 const clips = [clip1, clip2, clip3];
 const shotsManager = new ShotsManager(cameras, clips);
-shotsManager.config(shotsNames);
+
+/**
+ * This method takes an array of strings.
+ * The shot's names.
+ * This allows you to experiment, like you can test a sequence like:
+ * ["shot1", "shot2", "shot3"] or you may want to shuffle them...
+ * ["shot2", "shot1", "shot3"] to see what order looks better... or you may only use 2 shots: ["shot1, "shot3" ]
+ */ 
+shotsManager.config([
+	"shot1", "shot2", "shot3"
+]);
+
+
+/**
+ * This method will start playing the sequence defined in `.config`
+ */
 shotsManager.play();
 
 // and then in your animation loop....
